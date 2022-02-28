@@ -1,0 +1,28 @@
+/*PARA DEFINIR PALETA DE COLORES*/
+:root{
+    --blnaco: #ffffff;
+    --negro: #212121;
+    --azulpastel: #00AAE4;
+    --rosa: #F03687;
+    --rosafondo: #f3b0b6;
+    --verdepastel: #77dd77;
+    --amarillopastel: #FFFE71;
+    --grisclaro: #9c9c9c;
+ 
+ 
+ }
+
+html{
+    
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+ }
+ body{
+    font-size: 1.6rem;
+    
+    line-height: 1.5; /*Interlineado*/
+    
+}

@@ -1,0 +1,113 @@
+/*PARA DEFINIR PALETA DE COLORES*/
+:root{
+    --blnaco: #ffffff;
+    --negro: #212121;
+    --azulpastel: #00AAE4;
+    --rosa: #F03687;
+    --rosafondo: #f3b0b6;
+    --verdepastel: #77dd77;
+    --amarillopastel: #FFFE71;
+    --grisclaro: #9c9c9c;
+ 
+ 
+ }
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+   box-sizing: inherit;
+ }
+
+ body{
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+     min-height: 100vh;
+     width: 100%;
+    
+     
+ }
+
+ 
+
+ .form{
+    background-color: var(--rosafondo);
+     width: 90%;
+     max-width: 400px;
+     margin: auto;
+     margin-top: 10rem;
+     border-radius: 1em;
+     padding:  3.5em 1.5em;
+     
+     
+
+ }
+
+ @media (max-width:768px ) {
+     .form{
+         margin-top: 25px;
+        
+     }
+     
+     
+ }
+
+ @media (max-width: 450px) {
+     .form{
+         padding: 3.5em 1em;
+     }
+     
+    
+ }
+
+ 
+ .form__container{
+     width: 100%;
+     display: grid;
+     gap: .3em;
+     grid-auto-columns: 100%;
+
+ }
+
+ .form__title{
+     text-align: center;
+     font-size: 5rem;
+     margin-top: auto;
+     margin-bottom: .6rem;
+ }
+
+ .tituloFormulario{
+     padding: 0px;
+     color: var(--negro);
+ }
+ .form__input{  /*Palabras que van dentro de los inputs*/
+     font-family: inherit;
+     font-size: 1.5rem;
+     padding: .8em 1em; /*1em= 1rem y 1rem por defecto es igual a 16px*/
+     outline: none;
+     border: none;
+     border: 1px solid var(--negro)
+ }
+
+ .form__input--message{
+    resize: none; /*para evitar que el text area cambie de tamaño a voluntad del usuario*/
+     padding: 1.8em 1em ;
+     margin-bottom: .6em ;
+ }
+ .form__cta{
+     font-family: inherit;
+     background-color: var(--azulpastel);
+     color: var(--blnaco);
+     border: none;
+     font-weight: 300;
+     padding: .7em 0;
+     border-radius: .2em;
+     cursor: pointer;
+ }
+
+.campo{
+    font-size: 1.8rem;
+    font-weight: bold;
+   
+}
+    
+    

@@ -21,6 +21,9 @@ html{
    box-sizing: inherit;
  }
 
+
+ /*AQUI EMPIEZA CODIGO DEL INDEX PRICIPAL*/
+
  /*contenedor para manejar la barra de navegación, ancho, etc*/
 .contenedor{
    max-width: 70rem; /*mide la separacion entre las palabras de la navegacion, o sea que tanto de ancho toman*/
@@ -34,7 +37,7 @@ html{
    background-color: var(--azulpastel);
    color: var(--blnaco);
    padding: 1rem 1rem;
-   margin-top: 3rem;
+   
    font-size: 2rem;
    text-decoration: none;
    text-transform: uppercase; /*mayusculas*/
@@ -60,7 +63,6 @@ html{
    -moz-box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
     box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
     background-image: linear-gradient(to top, var(--rosafondo) 0%, var(--blnaco)40%);  /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
-
     padding: 2rem;
     border-radius: 2rem;
     
@@ -103,6 +105,7 @@ h3{
 h4{
     font-size: 3rem;
     padding-top: 7rem;
+    padding-bottom: 4rem;
     color: var(--rosa);
 }
 
@@ -115,11 +118,10 @@ h1,h2,h3,h4{
 
 #parrafo1{
     padding-top: 2rem;
-   font-size: 4.5rem;
+   font-size: 3rem;
    text-align: center;
-   text-align: justify;
-   font-family: 'Roboto', sans-serif;
-    
+   text-align: center;
+   font-family: 'Rubik', sans-serif;
     
 }
 
@@ -158,14 +160,6 @@ h1,h2,h3,h4{
          text-align: center;
        }
 
-
-      
-
-      
-
-      
-     
-      
 
    /*Social bar*/   
 
@@ -490,12 +484,22 @@ h1,h2,h3,h4{
     .fila{
       margin-top: 20px;  
       display: flex;
+      
     }
+
+    
     
     .fila label{
         margin-top: 0px;
         margin-left: 20px;
+        text-decoration: none;
+        color: var(--blnaco);
     }
+
+    .formatoicon{
+        color: var(--blnaco);
+    }
+    
     
    
     
@@ -511,11 +515,17 @@ h1,h2,h3,h4{
         display: flex;
     
     }
-    .fila2 label{
+    .fila2 label, a{
        margin-top: 0px;
        margin-left: 20px;
-    
+       text-decoration: none;
+
     }
+
+    .enlaceformato{
+         
+    }
+   
     
     .container-final{
         width: 100%;
