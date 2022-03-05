@@ -12,6 +12,13 @@
 
 }
 
+.unselectable {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */      
+  }
+
 /*GLOBALES*/
 html{
     font-size: 62.5%;
@@ -463,6 +470,10 @@ h1,h2,h3,h4{
          padding-top: 30px;
          
         
+    }
+
+    .colum3{
+        align-self: center;
     }
     
     .colum1, .saborsa-final{
