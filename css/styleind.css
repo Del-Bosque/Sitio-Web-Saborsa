@@ -31,45 +31,19 @@ html{
 
  /*AQUI EMPIEZA CODIGO DEL INDEX PRICIPAL*/
 
- /*contenedor para manejar la barra de navegación, ancho, etc*/
-.contenedor{
+ 
+.contenedor{/*contenedor para manejar la barra de navegación, ancho, etc*/
    max-width: 70rem; /*mide la separacion entre las palabras de la navegacion, o sea que tanto de ancho toman*/
    margin: 0 auto; /**/
    text-align: center;
 }
 
-/*BOTON CONTACTO*/
-.botonContacto {
-   
-   background-color: var(--azulpastel);
-   color: var(--blnaco);
-   padding: 1rem 1rem;
-   
-   font-size: 2rem;
-   text-decoration: none;
-   text-transform: uppercase; /*mayusculas*/
-   font-weight: bold; /*negritas*/
-   border-radius: .6rem;
-   width: 100%;
-  
-   
-}
-@media (min-width: 768px) {
-   .botonContacto{
-      width: auto;
-      
-   }
-   
-}
-
-
-
-
 .sombra{
    -webkit-box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
    -moz-box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
     box-shadow: 0px 6px 14px 0px rgba(64,50,64,0.87);
-    background-image: linear-gradient(to top, var(--rosafondo) 0%, var(--blnaco)40%);  /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
+   
+    background-image: linear-gradient(to top, #f3b0b6 0%, #ffffff 40%);  /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
     padding: 2rem;
     border-radius: 2rem;
     
@@ -77,95 +51,145 @@ html{
 
 body{
     font-size: 16px;
-    font-family: 'Kreon', serif;
-    background-image: linear-gradient(to top, var(--grisclaro) 0%, var(--blnaco)30%); /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
+   
+    background-image: linear-gradient(to top, var(--grisclaro) 0%, #ffffff 30%); /*para degradado en el fondo de la pagina*/ /*to top significa de abajo hacia rriba el degradado */
 }
 
 /*TIPOGRAFIA*/
-h1{
-    font-size: 6rem;
-
-    
-    font-family: 'Staatliches', cursive;
+.fuente-principal{ /*Para titulos*/
+   
+    font-family: 'Bebas Neue', cursive;
+}
+.funte-secundaria{/*Para titulos secundarios*/
+  
+    font-family: 'Roboto', sans-serif;
+    padding-top: 1rem;
 }
 
-.titulo-blanco{
+.funte-parrafo{ /*Para párrafos*/
+    font-family: 'Rubik', sans-serif;
+}
+
+.fuente-footerTitulo{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*TAMA{O TiPOGRAFIA*/
+.tamaño60{ /**/
+    font-size: 6rem;
+}
+.tamaño21{
+    font-size: 2.1; /*22px*/
+}
+
+.tamaño22{
+    font-size: 2.2rem; /*22px*/
+}
+.tamaño15{
+    font-size: 1.5rem;
+}
+.tamaño16{
+    font-size: 1.6rem;
+}
+.mayusculas{
+    text-transform: uppercase; /*mayusculas*/
+}
+.tamaño4{
+    font-size: 4rem; 
+}
+
+.tamaño23{
+    font-size: 2.3rem;
+  }
+.tamaño25{
+   font-size: 2.5rem;
+ }
+
+ .tamaño27{
+    font-size: 2.7rem;
+  }
+
+ /*ALINEACIÓN*/
+ .alineacion-centrada{
+    text-align: center;
+}
+
+/*COLORES*/
+.color-blanco{
     color: var(--blnaco);
 }
-
-
-
-h2{
-  font-size: 6rem;
-   padding-top: 5rem;
-   color: var(--azulpastel);
-  
+.color-azul {
+    color: var(--azulpastel);
 }
-
-h3{
-  
-   font-size: 5rem;
-   padding-top: 4rem;
-   color: var(--azulpastel);
-}
-
-h4{
-    font-size: 3rem;
-    padding-top: 7rem;
-    padding-bottom: 4rem;
+.color-rosa{
     color: var(--rosa);
 }
 
-h1,h2,h3,h4{
-   font-family: 'Bebas Neue', cursive;
-   text-align: center;
+/*PADDINGS*/
+.pad-top1{
+    padding-top: 15rem;
 }
+.pad-top2{
+    padding: 2rem;
+ }
+ .pad-top3{
+     padding-top: 3rem;
+ }
 
-
-
-#parrafo1{
-    padding-top: 2rem;
-   font-size: 3rem;
-   text-align: center;
-   text-align: center;
-   font-family: 'Rubik', sans-serif;
-    
-}
-
-
-    
-
-       .imagenlog{ /*padre*/
-         background-image: url(../img/papasinicio.png) ;
-         background-repeat: no-repeat;
-         background-size: cover;
-         height: 750px;
-         padding-top: 0px;
-         margin-bottom: 2rem;
-         position: static;
-         
-       }
-
-       .contenido-imagenlog{ /*hijo*/
-         position: static;
-         background-color: rgb(0 0 0 / 70%); /*transparencia mejorada*/
-         width: 100%;
-         height: 100%;
+/*BOTON CONTACTO*/
+.botonContacto {
    
-         display: flex;
-         flex-direction: column;
-         align-items: flex-end;
-         justify-content: end;
-         padding-right: 50px;
-         padding-left: 50px;
-        
-         
-      }
-       .maps {
-           padding-top: 3rem;
-         display: block; 
-         text-align: center;
-       }
+    background-color: var(--azulpastel);
+    color: var(--blnaco);
+    padding: 1rem 3rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-size: 1.5rem;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase; /*mayusculas*/
+    font-weight: bold; /*negritas*/
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+   
+    
+ }
+ @media (min-width: 768px) {
+    .botonContacto{
+       width: auto;
+       
+    }
+    
+ }
+ .imagenlog { /*padre*/
+     background-image: url(../img/papasinicio.png) ;
+     background-repeat: no-repeat;
+     background-size: cover;
+     height: 750px;
+     padding-top: 0px;
+     margin-bottom: 2rem;
+     position: static;  
+ }
+
+.contenido-imagenlog{ /*hijo*/
+     position: static;
+     background-color: rgb(0 0 0 / 70%); /*transparencia mejorada*/
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     padding-right: 50px;
+     padding-left: 50px;    
+ }
+
+ .maps {
+     padding-top: 3rem;
+    display: block; 
+    text-align: center;
+ }
 
 
    /*Social bar*/   
@@ -427,7 +451,7 @@ h1,h2,h3,h4{
    /* TERMINA ESTILOS PARA INDEX NOSOTROS*/
 
 
-    /*:::PIE DE PAGINA:::*/
+/*:::PIE DE PAGINA:::*/
        
     .saborsa-final{
         width: 215px;
@@ -441,16 +465,12 @@ h1,h2,h3,h4{
          color: var(--blnaco);
          margin-top: 100px;
          
-         
-    
-         
      }
     
      .container-principal{
          width: 100%;
          max-width: 1200px;
-         margin: auto;
-         
+         margin: auto; 
      }
     
      .container{
@@ -461,15 +481,9 @@ h1,h2,h3,h4{
          padding: 10px; /*hacer el contenedor del footer mas pequeño de altura*/
          }
     
-        
-    
-    
-    
      .colum1, .colum2, .colum3{
          max-width: 400px;
-         padding-top: 30px;
-         
-        
+         padding-top: 30px; 
     }
 
     .colum3{
@@ -479,27 +493,15 @@ h1,h2,h3,h4{
     .colum1, .saborsa-final{
         display: block;
         margin-top: 25px;
-        
         justify-content: space-between;
     }
     
-
-    
-    .colum2 h5{
-        font-size: 22px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
-       
-    }
     
     .fila{
       margin-top: 20px;  
-      display: flex;
-      
+      display: flex; 
     }
 
-    
-    
     .fila label{
         margin-top: 0px;
         margin-left: 20px;
@@ -512,41 +514,19 @@ h1,h2,h3,h4{
     }
     
     
-   
-    
-    .colum3 h6{
-      
-        font-size: 22px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        text-align: center;
-    }
-    
     .fila2{
         margin-top: 20px;
         display: flex;
-    
     }
     .fila2 label, a{
        margin-top: 0px;
-       margin-left: 20px;
+       margin-left: 0px;
        text-decoration: none;
-
     }
-
-    .enlaceformato{
-         
-    }
-   
-    
     .container-final{
         width: 100%;
         background-color: #212121;
-        
-        
-        
-    
     }
-    
     .final{
         max-width: 1200px;
         margin: auto;
@@ -554,11 +534,9 @@ h1,h2,h3,h4{
         justify-content: space-between;
         padding: 20px;
     }
-    
     .copyright{
         color: var(--blnaco);
     }
-    
     .politica a{
         text-decoration: none;
         color: var(--azulpastel);
@@ -566,14 +544,16 @@ h1,h2,h3,h4{
         font-size: 1.6rem;
     }
     
-    @media screen and (max-width: 1100px ) {
+    @media screen and (max-width: 700px ) {
      .container{
-         flex-wrap: wrap ;
+         flex-wrap: wrap;
+         flex-direction: column;
           
      }
      
      .colum2, .colum3{
-         margin-top: 40px;
+         margin-top: 10px;
+         align-self: flex-start;
         
      }
      

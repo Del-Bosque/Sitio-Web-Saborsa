@@ -27,6 +27,19 @@ html{
      
  }
 
+ /*MAYUSCULAS, MINUSCULAS*/
+ .tMay{ /*mayuscula*/
+    text-transform: uppercase;
+  }
+
+  .tMin{/*minusculas*/
+    text-transform: lowercase;
+  }
+
+  .tCap{
+      text-transform: capitalize;
+  }
+
  
 
  .form{
@@ -70,7 +83,8 @@ html{
 
  .form__title{
      text-align: center;
-     font-size: 5rem;
+     font-size: 4rem;
+
      margin-top: auto;
      margin-bottom: .6rem;
  }
